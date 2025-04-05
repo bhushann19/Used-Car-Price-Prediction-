@@ -4,6 +4,7 @@ import numpy as np
 import joblib
 import plotly.express as px
 from datetime import datetime
+import pickle
 
 # Page configuration and styling
 st.set_page_config(page_title="Japanese Used Car Price Predictor", layout="wide")
@@ -175,7 +176,8 @@ if df is not None:
                 
                 # In a real implementation, you would load and use your model here
                 try:
-                    model = joblib.load("best_car_price_model.pkl")
+                    with open("best_car_price_model.pkl", "rb") as f:
+                        model = pickle.load(f)
                     
                     # If you used label encoding before training, reapply same encoding here
                     input_encoded = input_data.copy()
