@@ -1,26 +1,16 @@
 # Core packages
 scikit-learn==1.5.1
-pandas==2.0.3
-numpy==1.24.3
-scikit-learn==1.3.0
-joblib==1.3.1
-
-# Data visualization
-plotly==5.16.1
-matplotlib==3.7.2
-seaborn==0.12.2
-
-# Optional utilities that might be useful
-python-dateutil==2.8.2
-pytz==2023.3
-tqdm==4.65.0
-
-# For potential data preprocessing needs
-scipy==1.11.1
-category-encoders==2.6.1
-
-# For potential model evaluation
-statsmodels==0.14.0
-
-# For enhanced UI components
-pillow==10.0.0
+pandas
+numpy
+scikit-learn
+joblib
+plotly
+matplotlib
+seaborn
+python-dateutil
+pytz
+tqdm
+scipy
+category-encoders
+statsmodels
+pillow
